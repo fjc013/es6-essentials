@@ -1,0 +1,29 @@
+console.log('hello webpack');
+console.log('hello in the browser');
+
+let a = 'fuck babel';
+
+console.log(a);
+
+{
+  let a = 'goodbye';
+  console.log('inside scope a', a);
+}
+
+// spread operator
+let arr1 = [7,8,9];
+let arr2 = [6, ...arr1, 10];
+console.log(arr2);
+
+// Use spread to pass function args
+function print(a, b, c) {
+  console.log(a, b, c);
+}
+
+let arr3 = [100, 200, 300];
+print(...arr3);
+// Another way
+function printMe(...z) {
+  console.log(z);
+}
+printMe(1000, 2000, 3000);
